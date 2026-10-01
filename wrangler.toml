@@ -1,13 +1,13 @@
 name = "noctra-auth"
 main = "src/index.ts"
 compatibility_date = "2025-09-01"
-workers_dev = true
+workers_dev = false
 routes = [{ pattern = "auth.getnoctra.dev", custom_domain = true }]
 
 [[d1_databases]]
 binding = "DB"
 database_name = "noctra-auth"
-database_id = "REPLACE_WITH_D1_DATABASE_ID"
+database_id = "688ef0d1-5ff0-4fe8-b4dd-79c8ee68fc38"
 migrations_dir = "migrations"
 
 [vars]
