@@ -1,0 +1,26 @@
+name = "noctra-auth"
+main = "src/index.ts"
+compatibility_date = "2025-09-01"
+workers_dev = true
+routes = [{ pattern = "auth.getnoctra.dev", custom_domain = true }]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "noctra-auth"
+database_id = "REPLACE_WITH_D1_DATABASE_ID"
+migrations_dir = "migrations"
+
+[vars]
+GITHUB_APP_ID = "5151968"
+GITHUB_APP_CLIENT_ID = "Iv23liJy9hhGftn73gKf"
+GITHUB_APP_SLUG = "noctra-agent"
+GITHUB_BOT_USER_ID = "336615789"
+TOKEN_REQUESTS_PER_MINUTE = "60"
+LINK_REQUESTS_PER_HOUR = "10"
+MAX_INSTANCES_PER_USER = "10"
+
+[triggers]
+crons = ["17 * * * *"]
+
+[observability]
+enabled = true

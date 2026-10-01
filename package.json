@@ -1,0 +1,26 @@
+{
+  "name": "noctra-auth",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Token service for the noctra-agent GitHub App",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "migrate:local": "wrangler d1 migrations apply noctra-auth --local",
+    "migrate:remote": "wrangler d1 migrations apply noctra-auth --remote",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "import-app": "node scripts/import-app.mjs"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261001.1",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.7",
+    "wrangler": "^4.146.0"
+  },
+  "engines": {
+    "node": ">=22.5"
+  }
+}
