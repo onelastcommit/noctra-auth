@@ -62,7 +62,7 @@ Tokens are limited to one repository and to one of three scopes:
 
 | Scope | Permissions | Used for |
 |---|---|---|
-| `write` | Contents, Pull requests, Issues: write; Checks, Actions, Metadata: read | Noctra opening PRs, labelling, replying to reviews |
+| `write` | Contents, Pull requests, Issues: write; Checks, Commit statuses, Actions, Metadata: read | Noctra opening PRs, labelling, replying to reviews |
 | `git` | Contents: write; Metadata: read | Noctra's own `git fetch` and `git push` |
 | `read` | Everything above, read-only | The coding agent (Claude Code, Codex and so on) during a run |
 

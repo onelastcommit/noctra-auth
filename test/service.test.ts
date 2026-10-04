@@ -146,6 +146,7 @@ describe("POST /token", () => {
       pull_requests: "write",
       issues: "write",
       checks: "read",
+      statuses: "read",
       actions: "read",
       metadata: "read",
     });
