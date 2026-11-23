@@ -142,7 +142,7 @@ GitHub webhooks, verified with `X-Hub-Signature-256`.
 
 ## Self-hosting with your own app
 
-You need a Cloudflare account, Node 22.5 or later, and a GitHub account or organisation to own the app.
+You need a Cloudflare account, Node 26 or later, and a GitHub account or organisation to own the app.
 
 1. **Fork and install**
 
